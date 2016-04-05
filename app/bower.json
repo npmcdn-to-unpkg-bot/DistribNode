@@ -17,7 +17,8 @@
   ],
   "dependencies": {
     "bootstrap": "^3.3.6",
-    "font-awesome": "^4.5.0"
+    "font-awesome": "^4.5.0",
+    "angular": "^1.5.3"
   },
   "overrides": {
     "bootstrap": {
@@ -28,7 +29,7 @@
       ]
     },
     "font-awesome": {
-      "main":[
+      "main": [
         "less/font-awesome.less",
         "css/font-awesome.min.css",
         "scss/font-awesome.scss"

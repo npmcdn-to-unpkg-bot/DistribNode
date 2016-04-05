@@ -10,7 +10,7 @@
     <!--inject:css-->
     <!--endinject-->
   </head>
-  <body ng-controller='mainCtrl as vm' class="container">
+  <body ng-controller='MainCtrl as vm' class="container">
       <div class="form-group">
         <div class="input-group col-md-4" >
           <input type="text" placeholder="Port" class="form-control" ng-model="vm.port">
@@ -29,10 +29,12 @@
       <!--bower:js-->
       <script src="/lib/jquery/dist/jquery.js"></script>
       <script src="/lib/bootstrap/dist/js/bootstrap.js"></script>
+      <script src="/lib/angular/angular.js"></script>
       <!--endbower -->
       <!--inject:js-->
       <script src="/js/custom-slider.js"></script>
       <script src="/config/app-config.js"></script>
+      <script src="/src/controllers/main-controller.js"></script>
       <!--endinject-->
   </body>
 </html>

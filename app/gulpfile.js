@@ -16,7 +16,7 @@ gulp.task('inject', function() {
     var wiredep = require('wiredep').stream;
     var inject = require('gulp-inject');
 
-    var injectSrc = gulp.src(['./public/css/*.css', './public/js/*.js','./config/*js', './src/controllers'], {
+    var injectSrc = gulp.src(['./public/css/*.css', './public/js/*.js', './config/*js', './src/**/*.js'], {
         read: false
     });
 
@@ -44,7 +44,7 @@ gulp.task('serve', ['style', 'inject'], function() {
             'PORT': 3000
         },
         watch: jsFiles
-    }
+    };
 
     return nodemon(options).on('restart', function(ev) {
         console.log('Restarting is going');
